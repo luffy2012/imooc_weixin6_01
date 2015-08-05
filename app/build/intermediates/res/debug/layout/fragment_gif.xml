@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hymm="http://schemas.android.com/apk/res/com.imooc.weixin6_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.imooc.weixin6_0.PowerImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/anim"
+        hymm:auto_play="true"
+        />
+
+</RelativeLayout><!-- From: file:/Users/apple/GitHub/imooc_weixin6_01/app/src/main/res/layout/fragment_gif.xml -->

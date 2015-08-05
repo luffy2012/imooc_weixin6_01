@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.imooc.weixin6_0.JokeFragment"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/id_listView_joke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/holo_blue_dark"
+        android:dividerHeight="8dp"
+        android:transcriptMode="alwaysScroll">
+    </ListView>
+
+</LinearLayout>
+<!-- From: file:/Users/apple/GitHub/imooc_weixin6_01/app/src/main/res/layout/fragment_joke.xml -->

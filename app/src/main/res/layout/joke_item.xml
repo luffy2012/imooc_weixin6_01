@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hymm="http://schemas.android.com/apk/res/com.imooc.weixin6_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:id="@+id/joke_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="monospace"
+        android:textSize="25sp"/>
+     <com.imooc.weixin6_0.PowerImageView
+         android:id="@+id/joke_item_iv"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/joke_item_tv"
+         android:adjustViewBounds="true"
+         android:scaleType="centerCrop"
+         android:src="@drawable/robot"
+         hymm:auto_play="true"/>
+</RelativeLayout>

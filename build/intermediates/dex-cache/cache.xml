@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/apple/GitHub/imooc_weixin6_01/app/libs/volley.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4a94601db9bdfb7dc60efabb3dea91a0675f591d">
+        <dex dex="/Users/apple/GitHub/imooc_weixin6_01/app/build/intermediates/pre-dexed/debug/volley-9ad4c8d8671544284059b3da3fb57c7f81c4e387.jar" />
+    </item>
+    <item
+        jar="/Applications/android-sdk-macosx/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/apple/GitHub/imooc_weixin6_01/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-d8648f9249df09469ae79892050121be0fe60a45.jar" />
+    </item>
+    <item
+        jar="/Users/apple/GitHub/imooc_weixin6_01/app/libs/GifView.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="5a518235931001b94e87540c99bd13258f614622">
+        <dex dex="/Users/apple/GitHub/imooc_weixin6_01/app/build/intermediates/pre-dexed/debug/GifView-2e6d207190873b6887688c6991470820303a9705.jar" />
+    </item>
+
+</items>

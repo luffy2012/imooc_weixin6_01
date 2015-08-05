@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">工具包</string>
+    <string name="action_search">查找</string>
+    <string name="action_add">添加</string>
+    <string name="menu_group_chat">发起群聊</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_addfriend">添加朋友</string>
+    <string name="menu_scan">扫一扫</string>
+    <string name="tab_contact">通讯录</string>
+    <string name="tab_found">图灵问答</string>
+    <string name="tab_me">我</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">图灵Fragment</string>
+    <string name="btn_name">发送</string>
+
+
+    <string-array name="welcome_tips">
+        <item>主人，奴婢在此等候多时了</item>
+        <item>主人，近来一切可好</item>
+        <item>亲爱的，我想死你了</item>
+        <item>欢迎归来，我亲爱的主人</item>
+        <item>我是小灵机器人，很高兴为您服务</item>
+    </string-array>
+</resources>
