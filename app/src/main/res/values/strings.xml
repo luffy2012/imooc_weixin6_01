@@ -12,10 +12,12 @@
     <string name="tab_found">图灵问答</string>
     <string name="tab_me">我</string>
 
+
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">图灵Fragment</string>
     <string name="btn_name">发送</string>
-
+    <string name="loadmore_label">加载更多...</string>
+    <string name="loading_label">正在加载....</string>
 
     <string-array name="welcome_tips">
         <item>主人，奴婢在此等候多时了</item>

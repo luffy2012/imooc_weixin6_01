@@ -15,6 +15,15 @@ ADDED from AndroidManifest.xml:2:1
 		INJECTED from AndroidManifest.xml:0:0
 uses-sdk
 ADDED from AndroidManifest.xml:7:5
+MERGED from com.facebook.fresco:fresco:0.6.0:5:5
+MERGED from com.facebook.fresco:drawee:0.6.0:5:5
+MERGED from com.facebook.fresco:fbcore:0.6.0:5:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.facebook.fresco:fbcore:0.6.0:5:5
+MERGED from com.facebook.fresco:imagepipeline:0.6.0:5:5
+MERGED from com.facebook.fresco:fbcore:0.6.0:5:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:9:9
 		INJECTED from AndroidManifest.xml:0:0
@@ -29,6 +38,9 @@ ADDED from AndroidManifest.xml:10:5
 		ADDED from AndroidManifest.xml:10:22
 application
 ADDED from AndroidManifest.xml:12:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
 	android:label
 		ADDED from AndroidManifest.xml:15:9
 	android:allowBackup

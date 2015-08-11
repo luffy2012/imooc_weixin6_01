@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:hymm="http://schemas.android.com/apk/res/com.imooc.weixin6_0"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
@@ -11,14 +11,16 @@
         android:layout_height="wrap_content"
         android:typeface="monospace"
         android:textSize="25sp"/>
-     <com.imooc.weixin6_0.PowerImageView
+     <com.facebook.drawee.view.SimpleDraweeView
          android:id="@+id/joke_item_iv"
          android:layout_width="match_parent"
          android:layout_height="match_parent"
          android:layout_below="@id/joke_item_tv"
          android:adjustViewBounds="true"
          android:scaleType="centerCrop"
-         android:src="@drawable/robot"
-         hymm:auto_play="true"/>
+         fresco:placeholderImage="@drawable/ic_menu_allfriends"
+         fresco:failureImage="@drawable/ic_menu_allfriends"
+         fresco:failureImageScaleType="centerCrop"
+         />
 </RelativeLayout>
 <!-- From: file:/Users/apple/GitHub/imooc_weixin6_01/app/src/main/res/layout/joke_item.xml -->

@@ -20,6 +20,9 @@ import android.view.View.OnClickListener;
 import android.view.ViewConfiguration;
 import android.view.Window;
 
+import com.android.volley.toolbox.ImageRequest;
+import com.facebook.drawee.backends.pipeline.Fresco;
+
 public class MainActivity extends FragmentActivity implements OnClickListener,
 		OnPageChangeListener
 {
@@ -36,6 +39,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
+		Fresco.initialize(this);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		setOverflowButtonAlways();

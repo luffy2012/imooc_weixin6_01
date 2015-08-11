@@ -3,16 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.imooc.weixin6_0.JokeFragment"
-    android:orientation="vertical">
-    <ListView
+    android:orientation="vertical"
+    tools:context="com.imooc.weixin6_0.JokeFragment">
+
+    <com.imooc.weixin6_0.widget.RefreshListView
         android:id="@+id/id_listView_joke"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:listSelector="@android:color/transparent"
         android:divider="@android:color/holo_blue_dark"
         android:dividerHeight="8dp"
-        android:transcriptMode="alwaysScroll">
-    </ListView>
-
+        android:listSelector="@android:color/transparent" />
 </LinearLayout>

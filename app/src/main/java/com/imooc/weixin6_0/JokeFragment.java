@@ -4,6 +4,7 @@ package com.imooc.weixin6_0;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.Gravity;
@@ -20,6 +21,7 @@ import com.imooc.weixin6_0.net.HttpData;
 import com.imooc.weixin6_0.net.HttpGetDataListener;
 import com.imooc.weixin6_0.net.JokeAdapter;
 import com.imooc.weixin6_0.net.JokeListData;
+import com.imooc.weixin6_0.widget.RefreshListView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,14 +33,18 @@ import java.util.List;
 /**
  * Created by apple on 15/7/27.
  */
-public class JokeFragment extends Fragment implements HttpGetDataListener {
+public class JokeFragment extends Fragment implements HttpGetDataListener,RefreshListView.IReflashListener {
 
     private HttpData httpData;
 //    private   TextView tv;
-    private ListView listView;
+    private RefreshListView listView;
     private JokeAdapter jokeAdapter;
 
     private List<JokeListData> lists;
+
+    private int page = 10;
+    private int pageSize = 5;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
@@ -52,26 +58,31 @@ public class JokeFragment extends Fragment implements HttpGetDataListener {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Log.d("ActivityCreated","AaaaaaA" +
-                "aaaaaaaaaaaaaaaaaaaaa");
         intiView();
-        initData();
+        loadMoreData(1, 10);
     }
 
     private void intiView() {
         View view = getView();
-        listView = (ListView) view.findViewById(R.id.id_listView_joke);
+        listView = (RefreshListView) view.findViewById(R.id.id_listView_joke);
         lists = new ArrayList<JokeListData>();
         jokeAdapter = new JokeAdapter(lists,getActivity());
         listView.setAdapter(jokeAdapter);
+        listView.setInterface(this);
         JokeListData data = new JokeListData();
         jokeAdapter.notifyDataSetChanged();
 
     }
 
-    private void initData() {
+//    private void initData() {
+//        httpData = (HttpData) new HttpData(
+//                "http://japi.juhe.cn/joke/img/text.from?key=10ebfee59e514e531a4e38f97613bdeb&page=1&pagesize=10", this).execute();
+//        jokeAdapter.notifyDataSetChanged();
+//    }
+
+    private void loadMoreData(int page,int pageSize) {
         httpData = (HttpData) new HttpData(
-                "http://japi.juhe.cn/joke/img/text.from?key=10ebfee59e514e531a4e38f97613bdeb&page=1&pagesize=10", this).execute();
+                "http://japi.juhe.cn/joke/img/text.from?key=10ebfee59e514e531a4e38f97613bdeb&page="+page+"&pagesize="+pageSize, this).execute();
         jokeAdapter.notifyDataSetChanged();
     }
 
@@ -110,4 +121,37 @@ public class JokeFragment extends Fragment implements HttpGetDataListener {
     }
 
 
+    @Override
+    public void onRefresh() {
+        // TODO Auto-generated method stub\
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                // TODO Auto-generated method stub
+                //获取最新数据
+                loadMoreData(1, 10);
+                //通知listview 刷新数据完毕；
+                listView.reflashComplete();
+                jokeAdapter.notifyDataSetChanged();
+
+            }
+        }, 2000);
+    }
+
+    @Override
+    public void onLoadMore() {
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                // TODO Auto-generated method stub
+                page = page +5;
+                loadMoreData(page,pageSize);
+                listView.onLoadMoreComplete();
+            }
+        }, 2000);
+    }
 }

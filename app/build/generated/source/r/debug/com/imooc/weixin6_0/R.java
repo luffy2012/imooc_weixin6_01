@@ -12,6 +12,14 @@ public final class R {
         public static final int welcome_tips=0x7f060000;
     }
     public static final class attr {
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int actualImageScaleType=0x7f01000f;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -19,7 +27,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int auto_play=0x7f010004;
+        public static final int auto_play=0x7f01001c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int backgroundImage=0x7f010010;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -29,10 +41,160 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int color=0x7f010000;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fadeDuration=0x7f010004;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int failureImage=0x7f01000a;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int failureImageScaleType=0x7f01000b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int icon=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int overlayImage=0x7f010011;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int placeholderImage=0x7f010006;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int placeholderImageScaleType=0x7f010007;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int pressedStateOverlayImage=0x7f010012;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progressBarAutoRotateInterval=0x7f01000e;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int progressBarImage=0x7f01000c;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progressBarImageScaleType=0x7f01000d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int retryImage=0x7f010008;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int retryImageScaleType=0x7f010009;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundAsCircle=0x7f010013;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundBottomLeft=0x7f010018;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundBottomRight=0x7f010017;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundTopLeft=0x7f010015;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundTopRight=0x7f010016;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundWithOverlayColor=0x7f010019;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundedCornerRadius=0x7f010014;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundingBorderColor=0x7f01001b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundingBorderWidth=0x7f01001a;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -51,6 +213,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int text_size=0x7f010003;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int viewAspectRatio=0x7f010005;
     }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f040000;
@@ -62,30 +232,33 @@ containing a value of this type.
         public static final int aio_friend_bg_nor_11=0x7f020002;
         public static final int aio_user_bg_nor_11=0x7f020003;
         public static final int anim=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int ic_menu_allfriends=0x7f020006;
-        public static final int ic_menu_emoticons=0x7f020007;
-        public static final int ic_menu_friendslist=0x7f020008;
-        public static final int ic_menu_start_conversation=0x7f020009;
-        public static final int men_scan_icon=0x7f02000a;
-        public static final int menu_add_icon=0x7f02000b;
-        public static final int menu_feedback_icon=0x7f02000c;
-        public static final int menu_group_chat_icon=0x7f02000d;
-        public static final int robot=0x7f02000e;
-        public static final int start_play=0x7f02000f;
-        public static final int tab_address_normal=0x7f020010;
-        public static final int tab_bg=0x7f020011;
-        public static final int tab_find_frd_normal=0x7f020012;
-        public static final int tab_settings_normal=0x7f020013;
-        public static final int tab_weixin_normal=0x7f020014;
-        public static final int visitor=0x7f020015;
+        public static final int dd=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int ic_menu_allfriends=0x7f020007;
+        public static final int ic_menu_emoticons=0x7f020008;
+        public static final int ic_menu_friendslist=0x7f020009;
+        public static final int ic_menu_start_conversation=0x7f02000a;
+        public static final int men_scan_icon=0x7f02000b;
+        public static final int menu_add_icon=0x7f02000c;
+        public static final int menu_feedback_icon=0x7f02000d;
+        public static final int menu_group_chat_icon=0x7f02000e;
+        public static final int pull_to_refresh_arrow=0x7f02000f;
+        public static final int robot=0x7f020010;
+        public static final int start_play=0x7f020011;
+        public static final int tab_address_normal=0x7f020012;
+        public static final int tab_bg=0x7f020013;
+        public static final int tab_find_frd_normal=0x7f020014;
+        public static final int tab_settings_normal=0x7f020015;
+        public static final int tab_weixin_normal=0x7f020016;
+        public static final int visitor=0x7f020017;
     }
     public static final class id {
-        public static final int action_add_friend=0x7f090011;
-        public static final int action_feedback=0x7f090013;
-        public static final int action_group_chat=0x7f090010;
-        public static final int action_scan=0x7f090012;
-        public static final int action_search=0x7f09000f;
+        public static final int action_add_friend=0x7f090019;
+        public static final int action_feedback=0x7f09001b;
+        public static final int action_group_chat=0x7f090018;
+        public static final int action_scan=0x7f09001a;
+        public static final int action_search=0x7f090017;
+        public static final int arrow=0x7f09000d;
         public static final int btn_send=0x7f090009;
         public static final int editText=0x7f090008;
         public static final int id_indicator_four=0x7f090004;
@@ -96,20 +269,29 @@ containing a value of this type.
         public static final int id_listView_tuling=0x7f090007;
         public static final int id_viewpager=0x7f090000;
         public static final int image_view=0x7f090005;
-        public static final int item_iv=0x7f09000d;
-        public static final int item_tv=0x7f09000e;
-        public static final int joke_item_iv=0x7f09000b;
-        public static final int joke_item_tv=0x7f09000a;
-        public static final int time=0x7f09000c;
+        public static final int item_iv=0x7f090015;
+        public static final int item_tv=0x7f090016;
+        public static final int joke_item_iv=0x7f090010;
+        public static final int joke_item_tv=0x7f09000f;
+        public static final int lastupdate_time=0x7f09000c;
+        public static final int layout=0x7f09000a;
+        public static final int loadmore_layout=0x7f090011;
+        public static final int loadmore_progress=0x7f090012;
+        public static final int loadmore_text=0x7f090013;
+        public static final int progress=0x7f09000e;
+        public static final int time=0x7f090014;
+        public static final int tip=0x7f09000b;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int fragment_gif=0x7f030001;
         public static final int fragment_joke=0x7f030002;
         public static final int fragment_tuling=0x7f030003;
-        public static final int joke_item=0x7f030004;
-        public static final int tuling_item_left=0x7f030005;
-        public static final int tuling_item_right=0x7f030006;
+        public static final int header_layout=0x7f030004;
+        public static final int joke_item=0x7f030005;
+        public static final int loadmore_footer=0x7f030006;
+        public static final int tuling_item_left=0x7f030007;
+        public static final int tuling_item_right=0x7f030008;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -120,13 +302,15 @@ containing a value of this type.
         public static final int app_name=0x7f070002;
         public static final int btn_name=0x7f070003;
         public static final int hello_blank_fragment=0x7f070004;
-        public static final int menu_addfriend=0x7f070005;
-        public static final int menu_feedback=0x7f070006;
-        public static final int menu_group_chat=0x7f070007;
-        public static final int menu_scan=0x7f070008;
-        public static final int tab_contact=0x7f070009;
-        public static final int tab_found=0x7f07000a;
-        public static final int tab_me=0x7f07000b;
+        public static final int loading_label=0x7f070005;
+        public static final int loadmore_label=0x7f070006;
+        public static final int menu_addfriend=0x7f070007;
+        public static final int menu_feedback=0x7f070008;
+        public static final int menu_group_chat=0x7f070009;
+        public static final int menu_scan=0x7f07000a;
+        public static final int tab_contact=0x7f07000b;
+        public static final int tab_found=0x7f07000c;
+        public static final int tab_me=0x7f07000d;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
@@ -217,6 +401,384 @@ containing a value of this type.
           @attr name com.imooc.weixin6_0:text_size
         */
         public static final int ChangeColorIconWithText_text_size = 3;
+        /** Attributes that can be used with a GenericDraweeView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #GenericDraweeView_actualImageScaleType com.imooc.weixin6_0:actualImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_backgroundImage com.imooc.weixin6_0:backgroundImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_fadeDuration com.imooc.weixin6_0:fadeDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_failureImage com.imooc.weixin6_0:failureImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_failureImageScaleType com.imooc.weixin6_0:failureImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_overlayImage com.imooc.weixin6_0:overlayImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_placeholderImage com.imooc.weixin6_0:placeholderImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_placeholderImageScaleType com.imooc.weixin6_0:placeholderImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_pressedStateOverlayImage com.imooc.weixin6_0:pressedStateOverlayImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_progressBarAutoRotateInterval com.imooc.weixin6_0:progressBarAutoRotateInterval}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_progressBarImage com.imooc.weixin6_0:progressBarImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_progressBarImageScaleType com.imooc.weixin6_0:progressBarImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_retryImage com.imooc.weixin6_0:retryImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_retryImageScaleType com.imooc.weixin6_0:retryImageScaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundAsCircle com.imooc.weixin6_0:roundAsCircle}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundBottomLeft com.imooc.weixin6_0:roundBottomLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundBottomRight com.imooc.weixin6_0:roundBottomRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundTopLeft com.imooc.weixin6_0:roundTopLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundTopRight com.imooc.weixin6_0:roundTopRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundWithOverlayColor com.imooc.weixin6_0:roundWithOverlayColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundedCornerRadius com.imooc.weixin6_0:roundedCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundingBorderColor com.imooc.weixin6_0:roundingBorderColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_roundingBorderWidth com.imooc.weixin6_0:roundingBorderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #GenericDraweeView_viewAspectRatio com.imooc.weixin6_0:viewAspectRatio}</code></td><td></td></tr>
+           </table>
+           @see #GenericDraweeView_actualImageScaleType
+           @see #GenericDraweeView_backgroundImage
+           @see #GenericDraweeView_fadeDuration
+           @see #GenericDraweeView_failureImage
+           @see #GenericDraweeView_failureImageScaleType
+           @see #GenericDraweeView_overlayImage
+           @see #GenericDraweeView_placeholderImage
+           @see #GenericDraweeView_placeholderImageScaleType
+           @see #GenericDraweeView_pressedStateOverlayImage
+           @see #GenericDraweeView_progressBarAutoRotateInterval
+           @see #GenericDraweeView_progressBarImage
+           @see #GenericDraweeView_progressBarImageScaleType
+           @see #GenericDraweeView_retryImage
+           @see #GenericDraweeView_retryImageScaleType
+           @see #GenericDraweeView_roundAsCircle
+           @see #GenericDraweeView_roundBottomLeft
+           @see #GenericDraweeView_roundBottomRight
+           @see #GenericDraweeView_roundTopLeft
+           @see #GenericDraweeView_roundTopRight
+           @see #GenericDraweeView_roundWithOverlayColor
+           @see #GenericDraweeView_roundedCornerRadius
+           @see #GenericDraweeView_roundingBorderColor
+           @see #GenericDraweeView_roundingBorderWidth
+           @see #GenericDraweeView_viewAspectRatio
+         */
+        public static final int[] GenericDraweeView = {
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
+            0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013,
+            0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017,
+            0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#actualImageScaleType}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:actualImageScaleType
+        */
+        public static final int GenericDraweeView_actualImageScaleType = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#backgroundImage}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.imooc.weixin6_0:backgroundImage
+        */
+        public static final int GenericDraweeView_backgroundImage = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#fadeDuration}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:fadeDuration
+        */
+        public static final int GenericDraweeView_fadeDuration = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#failureImage}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.imooc.weixin6_0:failureImage
+        */
+        public static final int GenericDraweeView_failureImage = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#failureImageScaleType}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:failureImageScaleType
+        */
+        public static final int GenericDraweeView_failureImageScaleType = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#overlayImage}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.imooc.weixin6_0:overlayImage
+        */
+        public static final int GenericDraweeView_overlayImage = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#placeholderImage}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.imooc.weixin6_0:placeholderImage
+        */
+        public static final int GenericDraweeView_placeholderImage = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#placeholderImageScaleType}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:placeholderImageScaleType
+        */
+        public static final int GenericDraweeView_placeholderImageScaleType = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#pressedStateOverlayImage}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.imooc.weixin6_0:pressedStateOverlayImage
+        */
+        public static final int GenericDraweeView_pressedStateOverlayImage = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#progressBarAutoRotateInterval}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:progressBarAutoRotateInterval
+        */
+        public static final int GenericDraweeView_progressBarAutoRotateInterval = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#progressBarImage}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.imooc.weixin6_0:progressBarImage
+        */
+        public static final int GenericDraweeView_progressBarImage = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#progressBarImageScaleType}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:progressBarImageScaleType
+        */
+        public static final int GenericDraweeView_progressBarImageScaleType = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#retryImage}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.imooc.weixin6_0:retryImage
+        */
+        public static final int GenericDraweeView_retryImage = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#retryImageScaleType}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:retryImageScaleType
+        */
+        public static final int GenericDraweeView_retryImageScaleType = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#roundAsCircle}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:roundAsCircle
+        */
+        public static final int GenericDraweeView_roundAsCircle = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#roundBottomLeft}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:roundBottomLeft
+        */
+        public static final int GenericDraweeView_roundBottomLeft = 20;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#roundBottomRight}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:roundBottomRight
+        */
+        public static final int GenericDraweeView_roundBottomRight = 19;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#roundTopLeft}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:roundTopLeft
+        */
+        public static final int GenericDraweeView_roundTopLeft = 17;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#roundTopRight}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:roundTopRight
+        */
+        public static final int GenericDraweeView_roundTopRight = 18;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#roundWithOverlayColor}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:roundWithOverlayColor
+        */
+        public static final int GenericDraweeView_roundWithOverlayColor = 21;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#roundedCornerRadius}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:roundedCornerRadius
+        */
+        public static final int GenericDraweeView_roundedCornerRadius = 16;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#roundingBorderColor}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:roundingBorderColor
+        */
+        public static final int GenericDraweeView_roundingBorderColor = 23;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#roundingBorderWidth}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:roundingBorderWidth
+        */
+        public static final int GenericDraweeView_roundingBorderWidth = 22;
+        /**
+          <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#viewAspectRatio}
+          attribute's value can be found in the {@link #GenericDraweeView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.imooc.weixin6_0:viewAspectRatio
+        */
+        public static final int GenericDraweeView_viewAspectRatio = 1;
         /** Attributes that can be used with a PowerImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -228,7 +790,7 @@ containing a value of this type.
            @see #PowerImageView_auto_play
          */
         public static final int[] PowerImageView = {
-            0x7f010004
+            0x7f01001c
         };
         /**
           <p>This symbol is the offset where the {@link com.imooc.weixin6_0.R.attr#auto_play}
