@@ -1,26 +1,20 @@
 package com.imooc.weixin6_0;
 
 
-import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.Volley;
+import com.imooc.weixin6_0.net.AppContext;
 import com.imooc.weixin6_0.net.HttpData;
 import com.imooc.weixin6_0.net.HttpGetDataListener;
 import com.imooc.weixin6_0.net.JokeAdapter;
 import com.imooc.weixin6_0.net.JokeListData;
+import com.imooc.weixin6_0.net.NetDetector;
 import com.imooc.weixin6_0.widget.RefreshListView;
 
 import org.json.JSONArray;
@@ -81,6 +75,10 @@ public class JokeFragment extends Fragment implements HttpGetDataListener,Refres
 //    }
 
     private void loadMoreData(int page,int pageSize) {
+        if(!NetDetector.isConn(AppContext.getInstance())){
+            NetDetector.setNetworkMethod(getActivity());
+            return;
+        }
         httpData = (HttpData) new HttpData(
                 "http://japi.juhe.cn/joke/img/text.from?key=10ebfee59e514e531a4e38f97613bdeb&page="+page+"&pagesize="+pageSize, this).execute();
         jokeAdapter.notifyDataSetChanged();
@@ -88,10 +86,10 @@ public class JokeFragment extends Fragment implements HttpGetDataListener,Refres
 
     @Override
     public void getDataUrl(String data) {
-
-
-
 //       tv.setText(data);
+//        if(data == null){
+//            return;
+//        }
         try {
             JSONObject jokes = new JSONObject(data);
             JSONObject result = jokes.getJSONObject("result");
@@ -116,7 +114,7 @@ public class JokeFragment extends Fragment implements HttpGetDataListener,Refres
             }
             jokeAdapter.notifyDataSetChanged();
         } catch (JSONException e) {
-            e.printStackTrace();
+           NetDetector.setNetworkMethod(getActivity());
         }
     }
 

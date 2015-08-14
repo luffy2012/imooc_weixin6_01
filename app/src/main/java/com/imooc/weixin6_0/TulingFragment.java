@@ -11,8 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.imooc.weixin6_0.net.AppContext;
 import com.imooc.weixin6_0.net.HttpData;
 import com.imooc.weixin6_0.net.ListData;
+import com.imooc.weixin6_0.net.NetDetector;
 import com.imooc.weixin6_0.net.TextAdapter;
 import com.imooc.weixin6_0.net.HttpGetDataListener;
 
@@ -100,6 +102,10 @@ public class TulingFragment extends Fragment implements HttpGetDataListener,View
     @Override
     public void onClick(View view) {
         if(view.getId() == R.id.btn_send){
+            if(!NetDetector.isConn(AppContext.getInstance())){
+                NetDetector.setNetworkMethod(getActivity());
+                return;
+            }
             content_str = editText.getText().toString();
             editText.setText("");
             String sendText = content_str.replace(" ","").replace("\n","");

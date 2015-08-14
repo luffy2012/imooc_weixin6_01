@@ -238,19 +238,20 @@ containing a value of this type.
         public static final int ic_menu_emoticons=0x7f020008;
         public static final int ic_menu_friendslist=0x7f020009;
         public static final int ic_menu_start_conversation=0x7f02000a;
-        public static final int men_scan_icon=0x7f02000b;
-        public static final int menu_add_icon=0x7f02000c;
-        public static final int menu_feedback_icon=0x7f02000d;
-        public static final int menu_group_chat_icon=0x7f02000e;
-        public static final int pull_to_refresh_arrow=0x7f02000f;
-        public static final int robot=0x7f020010;
-        public static final int start_play=0x7f020011;
-        public static final int tab_address_normal=0x7f020012;
-        public static final int tab_bg=0x7f020013;
-        public static final int tab_find_frd_normal=0x7f020014;
-        public static final int tab_settings_normal=0x7f020015;
-        public static final int tab_weixin_normal=0x7f020016;
-        public static final int visitor=0x7f020017;
+        public static final int logo=0x7f02000b;
+        public static final int men_scan_icon=0x7f02000c;
+        public static final int menu_add_icon=0x7f02000d;
+        public static final int menu_feedback_icon=0x7f02000e;
+        public static final int menu_group_chat_icon=0x7f02000f;
+        public static final int pull_to_refresh_arrow=0x7f020010;
+        public static final int robot=0x7f020011;
+        public static final int start_play=0x7f020012;
+        public static final int tab_address_normal=0x7f020013;
+        public static final int tab_bg=0x7f020014;
+        public static final int tab_find_frd_normal=0x7f020015;
+        public static final int tab_settings_normal=0x7f020016;
+        public static final int tab_weixin_normal=0x7f020017;
+        public static final int visitor=0x7f020018;
     }
     public static final class id {
         public static final int action_add_friend=0x7f090019;
@@ -302,15 +303,16 @@ containing a value of this type.
         public static final int app_name=0x7f070002;
         public static final int btn_name=0x7f070003;
         public static final int hello_blank_fragment=0x7f070004;
-        public static final int loading_label=0x7f070005;
-        public static final int loadmore_label=0x7f070006;
-        public static final int menu_addfriend=0x7f070007;
-        public static final int menu_feedback=0x7f070008;
-        public static final int menu_group_chat=0x7f070009;
-        public static final int menu_scan=0x7f07000a;
-        public static final int tab_contact=0x7f07000b;
-        public static final int tab_found=0x7f07000c;
-        public static final int tab_me=0x7f07000d;
+        public static final int joke=0x7f070005;
+        public static final int loading_label=0x7f070006;
+        public static final int loadmore_label=0x7f070007;
+        public static final int menu_addfriend=0x7f070008;
+        public static final int menu_feedback=0x7f070009;
+        public static final int menu_group_chat=0x7f07000a;
+        public static final int menu_scan=0x7f07000b;
+        public static final int tab_contact=0x7f07000c;
+        public static final int tab_found=0x7f07000d;
+        public static final int tab_me=0x7f07000e;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

@@ -20,7 +20,7 @@ import java.lang.reflect.Field;
 /**
  * PowerImageView是一个经过扩展的ImageView，它不仅继承了ImageView原生的所有功能，还加入了播放GIF动画的功能。
  * 
- * @author guolin
+ * @author apple
  */
 public class PowerImageView extends ImageView implements OnClickListener {
 

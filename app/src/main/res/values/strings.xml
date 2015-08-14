@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">工具包</string>
+    <string name="app_name">开心派</string>
     <string name="action_search">查找</string>
     <string name="action_add">添加</string>
     <string name="menu_group_chat">发起群聊</string>
     <string name="menu_feedback">意见反馈</string>
     <string name="menu_addfriend">添加朋友</string>
     <string name="menu_scan">扫一扫</string>
-    <string name="tab_contact">通讯录</string>
+    <string name="tab_contact">测试</string>
     <string name="tab_found">图灵问答</string>
     <string name="tab_me">我</string>
 
@@ -18,6 +18,7 @@
     <string name="btn_name">发送</string>
     <string name="loadmore_label">加载更多...</string>
     <string name="loading_label">正在加载....</string>
+    <string name="joke">趣图</string>
 
     <string-array name="welcome_tips">
         <item>主人，奴婢在此等候多时了</item>
